@@ -1,11 +1,8 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/carbon/config/gsm.mk)
+$(call inherit-product, vendor/carbon/config/common_gsm.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/carbon/config/nfc_enhanced.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
